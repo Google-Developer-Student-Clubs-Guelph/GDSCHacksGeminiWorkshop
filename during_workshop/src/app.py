@@ -58,6 +58,8 @@ model = genai.GenerativeModel("gemini-pro")
 ##
 response = model.generate_content("the prompt variable goes here")
 response.resolve()
+## `response.text` might also work now. When I was testing, it didn't work,
+## so I used the code below.
 text = response._result.candidates[0].content.parts[0].text
 
 ##
