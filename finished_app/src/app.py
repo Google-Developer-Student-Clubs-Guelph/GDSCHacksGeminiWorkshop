@@ -7,7 +7,7 @@
 
 ##
 ## Run the app:
-##  streamlit run /Users/tristansimpson/Desktop/geminiworkshop/src/app.py
+##  streamlit run src/app.py
 ##
 ## Install Libraries:
 ##  pip install -q -U google-generativeai streamlit IPython

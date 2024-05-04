@@ -2,7 +2,7 @@
 
 This is a workshop dedicated to introducing Google's Gemini API with Python and Streamlit. You'll learn how to generate an API key, authenticate with the API, make requests to the Gemini API, and output the response to the web with streamlit.
 
-## Getting Started
+## 1. Create a Gemini API Key
 
 We'll first start with creating a new API key.
 
@@ -22,7 +22,7 @@ If you don't have an existing project, you can create a new one. Otherwise, sele
 
 Copy the API key and save it for later. We'll need it soon.
 
-## Folder Structure
+## 2. Setting up the project folder structure
 
 Now that we've created our API key, we need to create a new folder where our Python files will be stored.
 
@@ -32,7 +32,7 @@ Create the folder that you want to store your Python code and files in.
 
 ### Steps 2: Creating required files
 
-#### Source Folder
+#### Our main code folder
 
 This is where we'll store our source code.
 
@@ -45,7 +45,7 @@ Done!
 
 #### Creating the config file
 
-This is where we'll store our API key and project configurations.
+JSON is like a dictionary in python. It's has key-value pairs. We'll store our API key in this file.
 
 1. Create a new file called: `config.json`
 2. Add the following content to the file:
@@ -57,8 +57,6 @@ This is where we'll store our API key and project configurations.
   }
 }
 ```
-
-Note: If you cloned the repository, rename `config.template.json` to `config.json`.
 
 Done!
 
@@ -101,7 +99,7 @@ This is our main file. See `src/app.py` for the code.
 An example of running the program is shown below:
 
 ```bash
-streamlit run /Users/tristansimpson/Desktop/geminiworkshop/src/app.py
+streamlit run src/app.py
 ```
 
 Basically, you'll need the path to your `app.py` file. You can get this however you like, but if you run the python file normally, streamlit will output the proper command to run.
